@@ -1,6 +1,6 @@
 # Example Shiny App on Heroku
 
-This is an example Shiny application, which uses the [heroku-buildpack-r](https://github.com/virtualstaticvoid/heroku-buildpack-r) on Heroku.
+This is an example Shiny application, which uses [heroku-docker-r][1] for Heroku.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
@@ -8,8 +8,8 @@ You can use this project as a template for creating Shiny application on Heroku.
 
 ```bash
 # get the sources
-git clone https://github.com/virtualstaticvoid/heroku-shiny-app.git
-cd heroku-shiny-app
+git clone https://github.com/virtualstaticvoid/heroku-docker-r-shiny-app.git
+cd heroku-docker-r-shiny-app
 
 # optionally, reinitialize git
 rm -rf .git
@@ -18,9 +18,10 @@ git add --all
 git commit -m "initial"
 
 # create a new heroku application and deploye
-heroku create --buildpack https://github.com/virtualstaticvoid/heroku-buildpack-r.git#heroku-16
+heroku create --stack=container
 git push heroku master
 
 # view the application
 heroku open
 ```
+[1]: https://github.com/virtualstaticvoid/heroku-docker-r
