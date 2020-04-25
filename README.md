@@ -1,6 +1,6 @@
 # Example Shiny App on Heroku
 
-This is an example Shiny application, which uses [heroku-docker-r][1] for Heroku.
+This is an example [Shiny][1] application, which uses [heroku-docker-r][2] for Heroku.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
@@ -24,4 +24,6 @@ git push heroku master
 # view the application
 heroku open
 ```
-[1]: https://github.com/virtualstaticvoid/heroku-docker-r
+
+[1]: https://shiny.rstudio.com
+[2]: https://github.com/virtualstaticvoid/heroku-docker-r
